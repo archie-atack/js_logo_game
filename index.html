@@ -1,3 +1,16 @@
+<!-- To do list
+ 
+Understand chatGPT logic lol
+Add more logos
+- windows
+- apple
+- linux
+
+Build in functionality for multiple different games
+Link to source code in banner
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,69 +24,26 @@
     <header>
         <h1>Logo Drawing Game</h1>
     </header>
-    <div class="logo-section">
-        <h2>Draw the Python Logo</h2>
-        <div class="drawing-area">
-            <div class="draw-box" id="draw-box-1">
-                <canvas class="draw-canvas" id="canvas-1"></canvas>
-            </div>
-            <div class="hidden-logo">
-                <button class="reveal_logo" id ="reveal-button-1">Reveal Logo</button>
-                <div class="logo" id="logo-1">
-                    <img src="logos/python.png" alt="Python Logo">
+    <div id="sections-container"></div>
+    <template id="section-template">
+        <div class="logo-section">
+            <h2>Draw the Logo</h2>
+            <div class="drawing-area">
+                <div class="draw-box">
+                    <canvas class="draw-canvas"></canvas>
+                </div>
+                <div class="hidden-logo">
+                    <button class="reveal_logo">Reveal Logo</button>
+                    <div class="logo">
+                        <img src="" alt="Logo">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row colours">
-            <ul class="options">
-                <li class="option selected"></li>
-                <li class="option"></li>
-                <li class="option"></li>
-            </ul>
-            <button class="clear-canvas" id="clear-box-1">Clear Canvas</button>
-        </div>
-    </div>
-    <div class="logo-section">
-        <h2>Draw the Slack Logo</h2>
-        <div class="drawing-area">
-            <div class="draw-box" id="draw-box-2"></div>
-            <div class="hidden-logo">
-                <button class="reveal_logo"  id ="reveal-button-2">Reveal Logo</button>
-                <div class="logo" id="logo-2">
-                    <img src="logos/slack.png" alt="Slack Logo">
-                </div>
+            <div class="row colours">
+                <ul class="options"></ul>
+                <button class="clear-canvas">Clear Canvas</button>
             </div>
         </div>
-        <div class="row colours">
-            <ul class="options">
-                <li class="option selected"></li>
-                <li class="option"></li>
-                <li class="option"></li>
-            </ul>
-            <button class="clear-canvas" id="clear-box-2">Clear Canvas</button>
-        </div>
-    </div>
-    <div class="logo-section">
-        <h2>Draw the Visual Studio Code Logo</h2>
-        <div class="drawing-area">
-            <div class="draw-box" id="draw-box-3"></div>
-            <div class="hidden-logo">
-                <button class="reveal_logo"  id ="reveal-button-3">Reveal Logo</button>
-                <div class="logo" id="logo-3">
-                    <img src="logos/vscode.png" alt="Visual Studio Code Logo">
-                </div>
-            </div>
-        </div>
-        <div class="row colours">
-            <ul class="options">
-                <li class="option selected"></li>
-                <li class="option"></li>
-                <li class="option"></li>
-            </ul>
-            <button class="clear-canvas" id="clear-box-3">Clear Canvas</button>
-        </div>
-    </div>
+    </template>
 </body>
 </html>
-<!-- VS code,  Slack logo, python, 
- Make it better for reactive to different viewpoints-->
