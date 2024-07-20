@@ -149,3 +149,20 @@ h2 {
 .colours .option.white-option.selected::before {
     border-color: #bbb;
 }
+
+/* Add in menu to choose logo set */
+
+#menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.logo-set-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}

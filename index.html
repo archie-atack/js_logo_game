@@ -24,26 +24,33 @@ Link to source code in banner
     <header>
         <h1>Logo Drawing Game</h1>
     </header>
-    <div id="sections-container"></div>
-    <template id="section-template">
-        <div class="logo-section">
-            <h2>Draw the Logo</h2>
-            <div class="drawing-area">
-                <div class="draw-box">
-                    <canvas class="draw-canvas"></canvas>
-                </div>
-                <div class="hidden-logo">
-                    <button class="reveal_logo">Reveal Logo</button>
-                    <div class="logo">
-                        <img src="" alt="Logo">
+    <div id="menu">
+        <h2>Select Logo Set</h2>
+        <button class="logo-set-btn" data-set="tech">Software</button>
+        <button class="logo-set-btn" data-set="football">Football</button>
+    </div>
+    <div id="game-content" class="hidden">
+        <div id="sections-container"></div>
+        <template id="section-template">
+            <div class="logo-section">
+                <h2>Draw the Logo</h2>
+                <div class="drawing-area">
+                    <div class="draw-box">
+                        <canvas class="draw-canvas"></canvas>
+                    </div>
+                    <div class="hidden-logo">
+                        <button class="reveal_logo">Reveal Logo</button>
+                        <div class="logo">
+                            <img src="" alt="Logo">
+                        </div>
                     </div>
                 </div>
+                <div class="row colours">
+                    <ul class="options"></ul>
+                    <button class="clear-canvas">Clear Canvas</button>
+                </div>
             </div>
-            <div class="row colours">
-                <ul class="options"></ul>
-                <button class="clear-canvas">Clear Canvas</button>
-            </div>
-        </div>
-    </template>
+        </template>
+    </div>
 </body>
 </html>
