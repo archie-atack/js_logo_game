@@ -39,6 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 colours: ["#003D6C", "#fff", "#EF3340","#34B233","#8B4513"],
                 logoName: "West Bromwich Albion"
             }
+        ],
+        flags: [
+            {
+                logoSrc: "logos/flag_ireland.png",
+                colours: ["#FF8200","#009A44", "#fff"],
+                logoName: "Ireland"
+            },
+            {
+                logoSrc: "logos/flag_hungary.png",
+                colours: ["#CE2939", "#477050", "#fff"],
+                logoName: "Hungary"
+            },
+            {
+                logoSrc: "logos/flag_usa.png",
+                colours: ["#0A3161", "#fff", "#B31942"],
+                logoName: "United States"
+            }
         ]
     };
 
@@ -57,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Set heading text and logo
             if (selectedSet === 'football') {
-                heading.textContent = `Draw the ${data.logoName} Badge`;
+                heading.textContent = `Draw the ${data.logoName} badge`;
+            } else if (selectedSet === 'flags') {
+                heading.textContent = `Draw the ${data.logoName} flag`;
             } else {
                 heading.textContent = `Draw the ${data.logoName} logo`;
             };
